@@ -1,21 +1,24 @@
 package aula_01_10;
 
-public class Lobo implements Animal{
+public class Lobo extends Animal{
+	public Lobo(String nome, String sexo, String raca) {
+		super(nome,sexo,raca);
+	}
 	@Override
 	public void dormir() {
-		System.out.println("O lobo está dormindo.");
+		System.out.println("O " + getRaca() + " dormiu!");
 	}
 	@Override
 	public void caminhar() {
-		System.out.println("O lobo está caminhando.");
+		System.out.println("O " + getRaca() + " está caminhando!");
 	}
 	@Override
 	public void correr() {
-		System.out.println("O lobo está correndo.");
+		System.out.println("O " + getRaca() + " está correndo!");
 	}
 	@Override
 	public void emitirSom() {
-		System.out.println("O lobo está uivando!");
+		System.out.println("O " + getRaca() + " está uivando!");
 	}
-
+		
 }

@@ -1,11 +1,9 @@
 package aula_01_10;
 
-public class Gato extends Animal {
-	
-	public Gato(String nome, String sexo, String raca) {
+public class Tigre extends Animal{
+	public Tigre(String nome, String sexo, String raca) {
 		super(nome, sexo, raca);
 	}
-	
 	@Override
 	public void dormir() {
 		System.out.println("O " + getRaca() + " dormiu!");
@@ -20,8 +18,7 @@ public class Gato extends Animal {
 	}
 	@Override
 	public void emitirSom() {
-		System.out.println("O " + getRaca() + " está miando!");
+		System.out.println("O " + getRaca() + " está rugindo!");
 	}
 		
-
 }
